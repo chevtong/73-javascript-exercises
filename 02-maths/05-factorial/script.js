@@ -20,16 +20,20 @@
         var a = Number(document.getElementById("number").value); 
         var c = 1;
 
-        if (a < 0)
-            console.log("go die");
+        if (a == 0 || a < 0 ){
 
-        else{
+            alert("ERROR");
+            document.getElementById('result').innerHTML = "Error";
+
+        } else {
             for ( let i = a; i > 0; i--){
                 c = c*i;
+            
+                document.getElementById('result').innerHTML = c; 
             }
         }
-        console.log(c);
-        document.getElementById('result').innerHTML = c; 
+        
+        
     });
 
 })();

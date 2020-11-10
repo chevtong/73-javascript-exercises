@@ -12,7 +12,36 @@
 (function() {
 
     // your code here
+  
 
-    
+    var number = 1; 
+
+    for (number = 1; number <101; number++) {
+
+        if ( number % 3 == 0){ 
+
+        console.log("fizz");
+
+        } else if ( number % 5 == 0){
+
+            console.log("buzz");
+        
+        }   else if (number % 3 == 0 && number % 5 == 0) {
+
+            console.log ("fizzbuzz");
+
+        }   else {
+            
+            console.log (number);
+        }
+        
+        
+       
+
+
+        }
+
+        
+
 
 })();
