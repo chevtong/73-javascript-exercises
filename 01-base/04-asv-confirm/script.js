@@ -11,24 +11,22 @@
 
 (function() {
 
-    // your code here
+       
     var name = prompt("Your Name?");
     var gender = prompt("Your Gender?");
     var town = prompt ("Your Town?");
 
     var reconfirm = confirm ( name + ", " + gender +", " + town + ", " + "\nPlease confirm are they correct?" );
 
-    if (reconfirm == true) {
-        thanks = "Thank you for your info";
+    
+    if (reconfirm == false) {
+        location.reload();
     } 
       else {
-        var name = prompt("Your Name?");
-        var gender = prompt("Your Gender?");
-        var town = prompt ("Your Town?");
-
-        var reconfirm = confirm ( name + ", " + gender +", " + town + ", " + "\nPlease confirm are they correct?" );
-    }
+        thanks = "Thank you for your info";
+      } 
 
       document.getElementById("demo").innerHTML = thanks;
 
-})()
+ })();
+

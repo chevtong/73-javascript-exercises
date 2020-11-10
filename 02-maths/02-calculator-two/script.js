@@ -23,3 +23,19 @@
         ),
     );
 })();
+
+function calc() {
+    var x = parseFloat(document.getElementById("op-one").value);
+    var y = parseFloat(document.getElementById("op-two").value);
+    var answer;
+
+    
+
+
+
+
+
+    document.getElementById("result").innerHTML.value = answer; 
+}
+
+
