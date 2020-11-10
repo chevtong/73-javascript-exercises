@@ -9,8 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+//  
 
     // your code here
+    var btnRed = document.querySelector("#red");
+    var btnGreen = document.querySelector("#green");
+    var btnYellow = document.getElementById("yellow");
+    var btnBlue = document.getElementById("blue");
 
-})();
+    btnRed.addEventListener('click', () =>{
+        document.body.style.background = '#f05454';
+    })
+
+    btnGreen.addEventListener('click', () =>{
+        document.body.style.background = '#cee397';
+    })
+
+    btnYellow.addEventListener('click', () =>{
+        document.body.style.background = '#fcf876';
+    })
+
+    btnBlue.addEventListener('click', () =>{
+        document.body.style.background = '#8bcdcd';
+    })
+
