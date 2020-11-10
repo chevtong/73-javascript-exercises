@@ -42,8 +42,6 @@
                 answer = number1 / number2;
                 break;
 
-           
-
             default: 
                 answer = "I am dying.. "
                 break;
@@ -53,7 +51,7 @@
         }
 
         alert(answer);
-        document.getElementById("result").innerHTML = answer;
+        
 
         
     };

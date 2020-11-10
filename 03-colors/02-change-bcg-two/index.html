@@ -1,7 +1,7 @@
 <!--
  * becode/javascript
  *
- * /02-maths/03-even-square/index.html - 2.3: carrés des pairs
+ * /03-colors/02-change-bcg-two/index.html - 3.2: couleur de fond (2)
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -10,40 +10,38 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>BeCode/JavaScript - 2.3: square and pairs</title>
+        <title>BeCode/JavaScript - 3.2: background color (2)</title>
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link rel="stylesheet" href="../../_shared/css/normalize.css" />
         <link rel="stylesheet" href="../../_shared/css/styles.css" />
-        <style>
-            p#result{
-                font-size: 40px;
-                color: white;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
             <header>
                 <h1>BeCode / JavaScript</h1>
                 <h2>
-                    <span>2.3</span>
-                    <strong>squares and pairs</strong>
+                    <span>3.2</span>
+                    <strong>background color (2)</strong>
                 </h2>
             </header>
             <div class="content">
                 <section class="explain">
-                    <p>On click on the button, calculate and display the square numbers between 1 and 21.</p>
+                    <p>When you click the button, get the value of the input and use it as the background color for the page.</p>
                 </section>
                 <section class="material">
-                    <div class="actions">
-                        <button type="button" id="run">run the script</button>
-                    </div>
+                    <form action="#" method="post">
+                        <div class="field">
+                            <label for="color">Color:</label>
+                            <input type="text" name="color" id="color" />
+                        </div>
+                        <div class="actions">
+                            <button type="button" id="run">Run the script</button>
+                        </div>
+                    </form>
                 </section>
             </div>
         </div>
-
-        <p id="result"></p>
 
         <script src="./script.js"></script>
     </body>

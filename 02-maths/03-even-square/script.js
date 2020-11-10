@@ -15,6 +15,26 @@
 
         // your code here
 
+        var text = "";
+        var number; 
+
+        for (number = 1; number <22; number++) {
+            text += "The square of " + number + " is " + Math.pow(number, 2) + "</br>";
+        }
+
+            console.log(text);
+
+         document.getElementById("result").innerHTML = text;
+            
+            
+        
+
+        
+  
+        
+
+        
     });
 
 })();
+
