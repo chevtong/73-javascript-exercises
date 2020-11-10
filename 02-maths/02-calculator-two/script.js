@@ -10,32 +10,84 @@
 // You will have time to focus on it later.
 
 (() => {
+
+
+
     // to get the value of an input: document.getElementById("element-id").value
 
     const performOperation = operation => {
         // perform the operation
+
+        let number1 = Number(document.getElementById('op-one').value);
+        let number2 = Number(document.getElementById('op-two').value);
+        let answer; 
+
+       
+
+        switch(operation){
+
+            case ("addition"): 
+                answer = number1 + number2;
+                break;
+
+            case ("substraction"):
+                answer = number1 - number2;
+                break;
+
+            case ("multiplication"):
+                answer = number1 * number2;
+                break;
+
+            case ("division"):
+                answer = number1 / number2;
+                break;
+
+           
+
+            default: 
+                answer = "I am dying.. "
+                break;
+        
+            
+
+        }
+
+        alert(answer);
+        document.getElementById("result").innerHTML = answer;
+
+        
     };
+
+  
+
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
         $btn.addEventListener(
             "click",
             () => (performOperation($btn.id), false),
+
+           
+
+
         ),
     );
 })();
 
-function calc() {
-    var x = parseFloat(document.getElementById("op-one").value);
-    var y = parseFloat(document.getElementById("op-two").value);
-    var answer;
-
-    
 
 
+// var text;
+// var fruits = document.getElementById("myInput").value;
 
-
-
-    document.getElementById("result").innerHTML.value = answer; 
-}
-
-
+// switch(fruits) {
+//   case "Banana":
+//     text = "Banana is good!";
+//     break;
+//   case "Orange":
+//     text = "I am not a fan of orange.";
+//     break;
+//   case "Apple":
+//     text = "How you like them apples?";
+//     break;
+//   default:
+//     text = "I have never heard of that fruit...";
+// }
