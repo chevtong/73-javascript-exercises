@@ -17,6 +17,24 @@
 
         // your code here
 
+        var set =[2, 4, 14, 10, 90, 23, 16];
+
+       
+
+        set.sort(function(a, b){return a - b});
+
+        document.getElementById("result").innerHTML = set;
+
+
+        
+
+
+
+
+
+
+
+
     });
 
 })();
