@@ -17,6 +17,19 @@
 
         // your code here
 
+        var a = Number(document.getElementById("number").value); 
+        var c = 1;
+
+        if (a < 0)
+            console.log("go die");
+
+        else{
+            for ( let i = a; i > 0; i--){
+                c = c*i;
+            }
+        }
+        console.log(c);
+        document.getElementById('result').innerHTML = c; 
     });
 
 })();
