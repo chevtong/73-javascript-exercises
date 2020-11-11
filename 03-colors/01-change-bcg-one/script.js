@@ -12,24 +12,20 @@
 //  
 
     // your code here
-    var btnRed = document.querySelector("#red");
-    var btnGreen = document.querySelector("#green");
-    var btnYellow = document.getElementById("yellow");
-    var btnBlue = document.getElementById("blue");
 
-    btnRed.addEventListener('click', () =>{
-        document.body.style.background = '#f05454';
-    })
 
-    btnGreen.addEventListener('click', () =>{
-        document.body.style.background = '#cee397';
-    })
+document.getElementById("red").addEventListener("click", function(){
+    document.body.style.backgroundColor = '#f05454';
+});
 
-    btnYellow.addEventListener('click', () =>{
-        document.body.style.background = '#fcf876';
-    })
+document.getElementById("green").addEventListener("click", function(){
+    document.body.style.backgroundColor = '#cee397';
+});
 
-    btnBlue.addEventListener('click', () =>{
-        document.body.style.background = '#8bcdcd';
-    })
+document.getElementById("yellow").addEventListener("click", function(){
+    document.body.style.backgroundColor = '#fcf876';
+});
 
+document.getElementById("blue").addEventListener('click', function(){
+    document.body.style.backgroundColor = '#8bcdcd';
+});

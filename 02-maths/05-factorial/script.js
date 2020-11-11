@@ -26,7 +26,9 @@
             document.getElementById('result').innerHTML = "Error";
 
         } else {
+
             for ( let i = a; i > 0; i--){
+                
                 c = c*i;
             
                 document.getElementById('result').innerHTML = c; 
