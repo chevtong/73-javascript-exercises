@@ -18,17 +18,19 @@
 
     for (number = 1; number <101; number++) {
 
-        if ( number % 3 == 0){ 
+        if (number % 3 == 0 && number % 5 == 0) {
 
-        console.log("fizz");
+            console.log ("fizzbuzz");
+
+        
 
         } else if ( number % 5 == 0){
 
             console.log("buzz");
         
-        }   else if (number % 3 == 0 && number % 5 == 0) {
+        }   else if ( number % 3 == 0){ 
 
-            console.log ("fizzbuzz");
+            console.log("fizz");
 
         }   else {
             
