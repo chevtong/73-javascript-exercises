@@ -45,11 +45,8 @@
             default: 
                 answer = "I am dying.. "
                 break;
-        
-            
-
         }
-
+        
         alert(answer);
         
 

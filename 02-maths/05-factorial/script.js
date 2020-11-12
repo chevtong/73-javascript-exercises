@@ -35,10 +35,13 @@
             for ( let i = a; i > 0; i--){
                 
                 c = c*i;
+
+               
             
             }
 
-            document.getElementById('result').innerHTML = c; 
+            console.log(c);
+            // document.getElementById('result').innerHTML = c; 
         }
         
         
