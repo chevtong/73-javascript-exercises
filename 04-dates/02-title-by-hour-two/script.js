@@ -15,4 +15,26 @@
 
     // your code here
 
+    let date = new Date();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    let greeting;
+
+    
+    
+
+   if ( hour >= 17 && min >= 30 ){
+
+        greeting = "Good evening!";
+    
+   } else {
+
+        greeting = "Hello!";
+   }
+
+   console.log(greeting);
+   document.getElementById("target").innerHTML = greeting.italics();
+
+
+
 })();
