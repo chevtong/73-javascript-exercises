@@ -23,16 +23,26 @@
     
     
 
-   if ( hour >= 17 && min >= 30 ){
+   if ( hour >= 12 && min >= 30 ){
 
         greeting = "Good evening!";
     
-   } else {
+   } 
+   
+   else if (hour >= 13) {
+
+     greeting =  "Good evening!";
+
+   }
+   
+   else {
 
         greeting = "Hello!";
    }
 
+   console.log(hour,min);
    console.log(greeting);
+
    document.getElementById("target").innerHTML = greeting.italics();
 
 
