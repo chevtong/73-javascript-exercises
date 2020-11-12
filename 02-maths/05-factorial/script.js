@@ -36,9 +36,11 @@
                 
                 c = c*i;
             
-                document.getElementById('result').innerHTML = c; 
             }
+
+            document.getElementById('result').innerHTML = c; 
         }
+        
         
         
     });
