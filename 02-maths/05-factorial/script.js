@@ -20,9 +20,14 @@
         var a = Number(document.getElementById("number").value); 
         var c = 1;
 
-        if (a == 0 || a < 0 ){
+        if ( a == 0 || a == 1 ){
+           
+            document.getElementById('result').innerHTML = "1";
 
-            alert("ERROR");
+        } else if ( a < 1 ) {
+
+            alert("Error");
+
             document.getElementById('result').innerHTML = "Error";
 
         } else {
