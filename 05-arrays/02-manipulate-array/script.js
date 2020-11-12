@@ -25,5 +25,12 @@
     ];
 
     // your code here
+    fruits.shift();
+    fruits.pop();
+
+    fruits.unshift("banana");
+    fruits.push("kiwi");
+
+    document.getElementById("result").innerHTML = fruits.join(", ");
 
 })();

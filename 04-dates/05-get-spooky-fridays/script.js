@@ -11,6 +11,31 @@
 
 (function() {
 
+    document.getElementById("run").addEventListener("click", function(){
+
     // your code here
 
+    // let d = year Date();
+    let date = year.getDate();
+    let weekday = year.getDay();
+    let month = year.getMonth();
+    let year = document.getElementById("year").value;
+
+    
+    
+  
+    
+
+  
+
+        if (date == 13 && weekday == 5) {
+
+            
+            
+        }
+        console.log (month);
+   
+
+
+});
 })();
