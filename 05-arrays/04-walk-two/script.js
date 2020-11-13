@@ -27,13 +27,16 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
     fruits.forEach(function(list, index){
 
         console.log(index + ": " + list);
 
     });
 
-
+});
   
     
     

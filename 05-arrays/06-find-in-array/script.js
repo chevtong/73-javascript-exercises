@@ -91,4 +91,16 @@
 
     // your code here
 
+    people.forEach(function(list,index){
+
+        if (list.lastname == "Dupont" && list.firstname == "Jean" ){
+
+            console.log(index + ": " + list.email);
+
+        }
+
+        
+
+    });
+
 })();

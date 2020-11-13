@@ -41,4 +41,18 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function(){
+
+        // delete people.email;
+        
+        people.forEach(function(list){
+
+            console.log(list.firstname + " " + list.lastname);
+    
+        });
+
+        
+
+    });
+
 })();
