@@ -91,4 +91,17 @@
 
     // your code here
 
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        function checkAdult(person) {return person.age > 18};
+
+        var adult = people.filter(checkAdult); 
+
+        console.log (adult);
+
+
+
+    });
+
 })();

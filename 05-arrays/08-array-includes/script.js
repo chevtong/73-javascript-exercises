@@ -28,4 +28,15 @@
 
     // your code here
 
+    let a = fruits.includes("apple");
+    let answer;
+
+    if (a === true){
+
+        answer = "yes";
+
+        console.log(answer);
+
+    }
+
 })();

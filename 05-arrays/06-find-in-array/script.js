@@ -91,16 +91,20 @@
 
     // your code here
 
-    people.forEach(function(list,index){
+    people.forEach(function(list, index){
 
-        if (list.lastname == "Dupont" && list.firstname == "Jean" ){
+        if (list.lastname == "Dupont" && list.firstname == "Jean" )
 
-            console.log(index + ": " + list.email);
-
-        }
-
-        
+        console.log(index);
 
     });
+
+
+
+
+
+
+
+
 
 })();

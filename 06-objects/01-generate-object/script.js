@@ -11,4 +11,31 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        // const person = {
+        //     lastname: "Tong",
+        //     firstname: "Wing",
+        //     age: 32,
+        //     city: "Brussels",
+        //     country: "Belgium",
+        // }
+
+        // console.log("Hi! I am " + person.firstname +" "+ person.lastname + ", " + person.age + "years old. I live in " + person.city +", " + person.country + ".");
+
+
+        let person = new Object();
+
+        person.lastname = "Tong";
+        person.firstname = "Wing";
+        person. age = 32;
+        person.cit = "Brussels";
+        person.country = "Belgium ";
+
+        console.log("Hi! I am " + person.firstname +" "+ person.lastname + ", " + person.age + "years old. I live in " + person.city +", " + person.country + ".");
+
+
+
+    });
+
 })();
