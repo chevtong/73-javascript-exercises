@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
 
     var people = [
         {
@@ -91,4 +91,17 @@
 
     // your code here
 
-})();
+    document.getElementById("run").addEventListener("click", function(){
+
+
+    let ageArray = people.map(x => x.age);
+    
+    // the full function :
+    // let ageArray = people.map(function(a) {return a.age;});
+    // console.log(ageArray);
+
+    let totalAge = ageArray.reduce((a, b) => a + b);
+
+    console.log(totalAge);
+
+});

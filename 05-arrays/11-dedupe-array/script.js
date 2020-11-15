@@ -30,4 +30,12 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function(){
+
+    // let noDupeArray = Array.from(new Set (fruits));
+
+    console.log([...new Set(fruits)]);
+
+    });
+
 })();

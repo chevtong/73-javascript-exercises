@@ -32,18 +32,22 @@
     document.getElementById("run").addEventListener("click", function(){
 
         
-    const finalObject = {...computers, ...defaultProps};
+
+    
+
+
 
     let i;
 
     for (i = 0; i < computers.length; i++){
 
         computers[i] = { ...defaultProps, ...computers[i]};
+        
     }
 
 
-   
     console.log(computers);
+   
 
 
     });

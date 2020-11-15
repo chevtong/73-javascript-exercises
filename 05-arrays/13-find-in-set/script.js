@@ -23,4 +23,19 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+    let numberOfPerson = people.size;
+    console.log(`There are ${numberOfPerson} persons in the set.`);
+
+    if (people.has("Alexandre") == true){
+        
+        console.log("Alexandre is here. ");
+
+    };
+
+});
+
+
 })();

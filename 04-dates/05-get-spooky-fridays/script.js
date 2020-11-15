@@ -15,25 +15,28 @@
 
     // your code here
 
-    // let d = year Date();
-    let date = year.getDate();
-    let weekday = year.getDay();
-    let month = year.getMonth();
-    let year = document.getElementById("year").value;
+    let yearInput = document.getElementById('year').value;
+    let d = new Date(yearInput);
+
+       
+
+
+    let date = d.setDate();
+    let weekday = d.getDay();
+    let month = d.setMonth();
+   
 
     
-    
-  
-    
+    for (  let i = 0; i < 12; i++){
 
-  
+        month(i) = month;
 
         if (date == 13 && weekday == 5) {
 
-            
+            console.log (true);
             
         }
-        console.log (month);
+    }    
    
 
 

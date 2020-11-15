@@ -39,4 +39,36 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+    // First, Use the spread operator to transform a set into an Array.
+    let adjectivesArray = [...adjectives];
+
+    // Get random value from the objective array, |0 works like Math.floor()
+    let randObj = adjectivesArray[(Math.random() * adjectivesArray.length) | 0];
+   
+    // Get random value from the birds array, |0 works like Math.floor()
+    let randBirds = birds[(Math.random() * birds.length) | 0];
+
+
+    if (randBirds.num == 1){
+        txt = `A ${randObj} ${randBirds.name}`;
+    } else {
+        txt = `A few ${randObj} ${randBirds.name}s`;
+    }
+
+    document.getElementById("target").textContent = txt;
+    
+    
+
+
+
+
+
+
+    });
+
+
+
 })();

@@ -15,10 +15,8 @@
     // your code here
 
 
-//  const map = new Map();
-//  map.set("name", "species", "age", "gender", "color");
-//  map.set("Skitty", "cat", 9, "female", "tabby");
 
-//  let x =Object.fromEntries(map);
+    // const objKeys = Object.formEntries(keys,values);
+    
 
-// console.log (x);
+
