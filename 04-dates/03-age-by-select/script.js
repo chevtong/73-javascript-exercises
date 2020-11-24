@@ -24,8 +24,7 @@ function submitDob(){
         var month = document.getElementById("dob-month");
         var monthInput = month.options[month.selectedIndex].value;
         
-        var year = document.getElementById("dob-year");
-        var yearInput = year.options[year.selectedIndex].value;
+        var year = document.getElementById("dob-year")= year.options[year.selectedIndex].value;
 
         var d = new Date();
         var thisYear = d.getFullYear();

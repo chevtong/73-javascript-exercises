@@ -16,27 +16,31 @@
     // your code here
 
     let yearInput = document.getElementById('year').value;
-    let d = new Date(yearInput);
+    let d = new Date();
 
-       
+    let counter = 0;
 
 
-    let date = d.setDate();
-    let weekday = d.getDay();
-    let month = d.setMonth();
-   
+    function fridayThirteen(year){
 
     
-    for (  let i = 0; i < 12; i++){
+        for(month = 0; month < 12; month++){
 
-        month(i) = month;
+         d.setFullYear(yearInput, month, 13);
 
-        if (date == 13 && weekday == 5) {
+            if (d.getDay() == 5){
+              
+              console.log(month++);
+              counter++;
 
-            console.log (true);
-            
-        }
-    }    
+            };
+        };
+    
+        return counter;      
+                       
+    }
+
+    fridayThirteen(yearInput);
    
 
 
