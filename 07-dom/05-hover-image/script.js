@@ -13,4 +13,23 @@
 
     // your code here
 
+    let img = document.querySelector("img");
+    let originalImg = img.getAttribute("src");
+    let hoverImg = img.getAttribute("data-hover");
+
+ 
+    //use event mouseover and mouseout to change the src of image
+    img.addEventListener("mouseover", function(){
+
+        img.src = hoverImg;
+
+    })
+
+    img.addEventListener("mouseout", function(){
+
+        img.src = originalImg;
+    })
+
+
+
 })();
