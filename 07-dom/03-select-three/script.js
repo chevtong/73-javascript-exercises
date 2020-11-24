@@ -20,8 +20,8 @@
 
     
     //DO WITH A FOREACH 
-    sentence.forEach(sentence => {
-        sentence.innerHTML = "owned";
+    sentence.forEach(x => {
+        x.innerHTML = "owned";
     })
 
 

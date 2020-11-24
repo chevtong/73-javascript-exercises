@@ -12,5 +12,35 @@
 (function() {
 
     // your code here
+    let container = document.querySelector("#target");
+
+    let table = document.createElement("table");
+    let tblBody = document.createElement("tbody");
+
+    for (let i = 0; i <10; i++ ){
+
+        var row = document.createElement("tr");
+
+        var cell = document.createElement("td");
+        cell.style.border="5px solid red";
+
+        var text = document.createTextNode(i+1);
+
+
+
+        //append(s) text=>cell->row->tblbody->table->div
+        cell.appendChild(text);
+        row.appendChild(cell);
+        tblBody.appendChild(row);
+
+    };   
+
+    table.appendChild(tblBody);
+
+    container.appendChild(table);
+
+
+
+
 
 })();
