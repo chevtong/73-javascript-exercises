@@ -12,5 +12,31 @@
 (function() {
 
     // your code here
+    let target = document.querySelector("#target");
+    let table = document.createElement("table");
+    let tableBody = document.createElement("tbody");
+
+    for (var i = 0; i < 10; i++){
+
+        let tr = document.createElement("tr");
+
+        for(var j =0; j<10; j++){
+
+            let td = document.createElement("td");
+
+            //put the text inside the td element
+            let num = document.createTextNode((i+1)*(j+1));
+
+            td.appendChild(num);
+            tr.appendChild(td);
+        }
+        
+        tableBody.appendChild(tr);
+    }
+
+    table.appendChild(tableBody);
+    target.appendChild(table);
+
+    
 
 })();
