@@ -13,4 +13,23 @@
 
     // your code here
 
+    //get the url of the image
+    let span = document.querySelector("#source");
+    let link = span.getAttribute("data-image");
+
+    console.log(link);
+
+
+    //create new image element 
+    let target = document.querySelector("#target"); 
+    let image = document.createElement("img");
+
+    image.src = link;
+  
+    target.appendChild(image);
+
+
+    //remove original element
+    span.remove();
+
 })();
