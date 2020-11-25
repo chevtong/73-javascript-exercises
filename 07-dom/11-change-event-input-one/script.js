@@ -21,7 +21,7 @@
         //SET THE MAXLENGTH FOR THE INPUT
         let pwdValue = document.querySelector("#pass-one").value;
         
-        document.querySelector("#pass-one").maxLength = "10";
+        document.querySelector("#pass-one").maxLength = "11";
         //console.log("pwd: " + pwdValue + " length: " + pwdValue.length);
 
         //CHANGE INPUT OF COUNTER ACCORDING TO THE LENGHT
