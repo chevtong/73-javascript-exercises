@@ -12,5 +12,29 @@
 (function() {
 
     // your code here
+    document.querySelector("#run").addEventListener("click", function(){
+
+    let pwd = document.querySelector("#pass-one").value;
+    let pwd2 = document.querySelector("#pass-two").value;
+    console.log(pwd);
+    console.log(pwd2);
+
+    if (pwd !== pwd2){
+        console.log("not the same");
+
+        // CAN USE THE INLINE STYLES
+        // document.querySelector("#pass-one").style.borderColor = "red";
+        // document.querySelector("#pass-two").style.borderColor = "red";
+
+
+        //AND ALSO SETATTRIBUTES() METHOD
+        document.querySelector("#pass-one").setAttribute("style", "border-color:red");
+        document.querySelector("#pass-two").setAttribute("style", "border-color:red");
+        // ref site: https://www.javascripttutorial.net/javascript-dom/javascript-style/
+    }
+
+    })
+
+
 
 })();

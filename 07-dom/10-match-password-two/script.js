@@ -12,5 +12,24 @@
 (function() {
 
     // your code here
+    document.querySelector("#run").addEventListener("click", function(){
+
+        let pwd = document.querySelector("#pass-one").value;
+        let pwd2 = document.querySelector("#pass-two").value;
+        console.log(pwd);
+        console.log(pwd2);
+
+        let pwdBox = document.querySelector("#pass-one");
+        let pwdBox2 = document.querySelector("#pass-two");
+    
+        if (pwd !== pwd2){
+            console.log("not the same");
+            
+            pwdBox.classList.add("error");
+            pwdBox2.classList.add("error");
+
+        };
+    
+    });
 
 })();
