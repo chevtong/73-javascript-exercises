@@ -18,36 +18,22 @@
 
     
         let pwdValue = document.querySelector("#pass-one").value;
-        let number = /1-9/g;
-        
-        if (pwdValue.match(number) &&  pwdValue.length > 7){
 
-            console.log("two number + long enough");
+        //USE REGULAR EXPRESSION WITH 2 DIGITS REQUIRED
+        let regex = /^(?=.*?[0-9].*?[0-9])[0-9a-zA-Z!@#$%0-9]{8,}$/gm;
+
+        if (regex.test(pwdValue)){
+
+            console.log("OK"); 
+            document.querySelector(".indicator").textContent = "ok";
 
         } else {
-            console.log("error");
-        }
-
-        // let regex = "^((?=.*\d){2}).(?=.{8,})";
-
-        // if (pwdValue.match(regex)) {
-
-        //     return true;
-        
-        
-        // } else { 
-        //     return false; 
             
-        // }
-        
-    
-        /**
-         * (?=.*\d)         should contain at least 1 digit
-         * (?=(.*\W){2})    should contain at least 2 special characters
-         * (?=.*[a-zA-Z])   should contain at least 1 alphabetic character
-         * (?!.*\s)         should not contain any blank space
-         */
+            console.log("Not ok"); 
+            document.querySelector(".indicator").textContent = "Not ok";
 
+        }
+     
     });
    
     
