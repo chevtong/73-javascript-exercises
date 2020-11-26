@@ -13,4 +13,17 @@
 
     // your code here
 
+    var slider = document.querySelector("#slider");
+
+    var num = document.querySelector("#target");
+
+    
+
+    //oninput is an Event, activate once the element gets user input
+    slider.oninput = function(){
+
+        //value already given in the HTML
+        num.innerHTML = slider.value;
+    }
+
 })();

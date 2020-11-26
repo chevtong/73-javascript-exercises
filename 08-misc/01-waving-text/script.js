@@ -13,4 +13,35 @@
 
     // your code here
 
+    
+    let text = document.querySelector("#target").innerText;
+    console.log (text);
+
+    let textArray = text.split("");
+    console.log (textArray);
+
+    document.querySelector("#target").innerText = "";
+
+
+  
+    // for (let i=0; i < textArray.length; i++){
+
+        // let font = i % 8; 
+        // let result = textArray[i].fontsize(font); 
+
+        // document.querySelector("#target").innerHTML += result;
+
+        // }
+
+
+    textArray.forEach(function(letter, i){
+
+        let font = i % 8; 
+        let result = textArray[i].fontsize(font); 
+
+        document.querySelector("#target").innerHTML += result;
+
+    })
+
+
 })();
