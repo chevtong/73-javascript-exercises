@@ -114,20 +114,11 @@
     
     // btns.forEach((btn) => {
 
-        
-    
-        
-
-
     //     btn.addEventListener("click", function(){
     //       
     //         let currentValue = btn.getAttribute("data-min");
-    //         let maxValue = btn.getAttribute("data-max");
-            
-           
-                
-                
-    
+    //         let maxValue = btn.getAttribute("data-max");         
+                    
     //             if (currentValue < maxValue){
     
     //                 currentValue++;
@@ -136,22 +127,8 @@
             
     //                 console.log(newCurrentValue);
     //             }
-
-                
-    
-            
-        
-        
-                
-        
-           
-
-        
+ 
     //     });
-
-        
-
-
 
     // });
 

@@ -9,8 +9,45 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
+
 (function() {
 
     // your code here
 
+   
+
+
+    let min;
+    let max;
+    let inputs = document.querySelectorAll("input"); 
+    inputs.forEach(input => {
+         min = input.getAttribute("data-min");
+         max = input.getAttribute("data-max");
+    });
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); 
+        }
+
+        
+
+    let btns = document.querySelectorAll("button");
+    
+    btns.forEach((btn) => {
+
+        btn.addEventListener("click", function(){
+          
+            
+            console.log("clicked")
+           
+                
+        });
+    });
+
 })();
+
+
