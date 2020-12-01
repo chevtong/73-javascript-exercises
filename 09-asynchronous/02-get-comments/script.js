@@ -11,4 +11,31 @@
 
 (() => {
     // your code here
-})();
+    document.getElementById("run").addEventListener("click", function(){
+
+        window.lib.getPosts(callBackArticles);
+
+            function callBackArticles(error, articles){
+
+                articles.forEach(article => {
+
+                    window.lib.getComments(article.id, (error, comment) => {
+
+                        console.log(comment);
+
+                        //need to put comment?? 
+
+                    });                      
+                      
+
+                });
+    
+
+            };
+  
+
+    });
+
+})()
+
+
